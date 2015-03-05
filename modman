@@ -1,4 +1,5 @@
 src/app/code/community/IntegerNet/AttributeOptionPager app/code/community/IntegerNet/AttributeOptionPager
 src/app/design/adminhtml/default/default/template/integernet_attributeoptionpager app/design/adminhtml/default/default/template/integernet_attributeoptionpager
+src/app/design/adminhtml/default/default/layout/integernet_attributeoptionpager.xml app/design/adminhtml/default/default/layout/integernet_attributeoptionpager.xml
 src/app/etc/modules/IntegerNet_AttributeOptionPager.xml app/etc/modules/IntegerNet_AttributeOptionPager.xml
 src/skin/adminhtml/default/default/integernet_attributeoptionpager skin/adminhtml/default/default/integernet_attributeoptionpager

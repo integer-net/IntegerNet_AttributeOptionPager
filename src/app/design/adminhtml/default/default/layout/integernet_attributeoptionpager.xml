@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * integer_net Magento Module
+ *
+ * @category   IntegerNet
+ * @package    IntegerNet_AttributeOptionPager_Model_Observer
+ * @copyright  Copyright (c) 2015 integer_net GmbH (http://www.integer-net.de/)
+ * @author     Fabian Schmengler <fs@integer-net.de>
+ */
+-->
+<layout>
+    <adminhtml_catalog_product_attribute_edit>
+        <reference name="head">
+            <action method="addCss"><file>integernet_attributeoptionpager/style.css</file></action>
+        </reference>
+        <block type="integernet_attributeoptionpager/adminhtml_pager"
+               name="integernet_attributeoptionpager.toolbar"/>
+    </adminhtml_catalog_product_attribute_edit>
+</layout>
