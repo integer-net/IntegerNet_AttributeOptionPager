@@ -21,5 +21,8 @@
     ],
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
+    },
+    "suggest": {
+        "jarlssen/fasterattributeoptionedit" : "Lazy loading of form fields to reduce JavaScript load."
     }
 }
