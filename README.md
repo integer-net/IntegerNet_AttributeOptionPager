@@ -16,6 +16,8 @@ Description
 -----------
 This Magento extension adds pagination to the attribute option form, useful for product attributes with very big numbers of options. This prevents browser crashs due to long running JavaScipt and huge DOM. It is compatible with [Jarlssen_FasterAttributeOptionEdit](https://github.com/Jarlssen/Jarlssen_FasterAttributeOptionEdit) - both modules together make editing attribute options most efficient.
 
+![Screenshot](https://raw.githubusercontent.com/integer-net/IntegerNet_AttributeOptionPager/master/screenshot.png)
+
 Requirements
 ------------
 - PHP >= 5.3.0
