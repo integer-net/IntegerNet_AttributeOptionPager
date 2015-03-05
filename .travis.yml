@@ -8,7 +8,6 @@ env:
   - MAGE=1.8.1.0
   - MAGE=1.7.0.2
   - MAGE=1.6.2.0
-  - MAGE=1.5.1.0
 before_script:
   # Fixing Magento hackathon installer
   - mkdir -p tests/magento
