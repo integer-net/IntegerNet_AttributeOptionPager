@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * integer_net Magento Module
+ *
+ * @category   IntegerNet
+ * @package    IntegerNet_AttributeOptionPager_Model_Observer
+ * @copyright  Copyright (c) 2015 integer_net GmbH (http://www.integer-net.de/)
+ * @author     Fabian Schmengler <fs@integer-net.de>
+ */
+-->
+<config>
+    <modules>
+        <IntegerNet_AttributeOptionPager>
+            <active>true</active>
+            <codePool>community</codePool>
+        </IntegerNet_AttributeOptionPager>
+    </modules>
+</config>

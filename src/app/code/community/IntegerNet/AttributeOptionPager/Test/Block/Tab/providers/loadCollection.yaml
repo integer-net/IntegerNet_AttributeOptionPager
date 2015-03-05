@@ -1,0 +1,40 @@
+no_page_specified:
+  requestPage: ""
+  requestPageSize: null
+  configPageSize: 10
+page_one:
+  requestPage: 1
+  requestPageSize: null
+  configPageSize: 10
+page_two:
+  requestPage: 2
+  requestPageSize: null
+  configPageSize: 10
+last_page:
+  requestPage: 10
+  requestPageSize: null
+  configPageSize: 10
+last_page_plus_one:
+  requestPage: 11
+  requestPageSize: null
+  configPageSize: 10
+page_zero:
+  requestPage: 0
+  requestPageSize: null
+  configPageSize: 10
+not_configured:
+  requestPage: 2
+  requestPageSize: null
+  configPageSize: ""
+request_page_size_20:
+  requestPage: 2
+  requestPageSize: 20
+  configPageSize: 10
+request_page_size_100:
+  requestPage: 1
+  requestPageSize: 90
+  configPageSize: 10
+request_page_size_1000:
+  requestPage: 1
+  requestPageSize: 1000
+  configPageSize: 10

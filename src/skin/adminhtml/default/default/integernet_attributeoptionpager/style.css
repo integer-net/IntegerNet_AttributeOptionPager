@@ -1,0 +1,10 @@
+/* Pager */
+.pager { font-size:11px; background:#fff url(bkg_toolbar.gif) 0 100% repeat-x; padding:4px 8px; border-top:1px solid #e2e2e2; text-align:center; }
+.pager .amount { float:left; margin:0; }
+.pager .limiter { float:right; }
+.pager .limiter label { vertical-align:middle; }
+.pager .limiter select { padding:0; margin:0 0 1px; vertical-align:middle; }
+.pager .pages { margin:0 140px; }
+.pager .pages ol { display:inline; }
+.pager .pages li { display:inline; margin:0 2px; }
+.pager .pages .current {}

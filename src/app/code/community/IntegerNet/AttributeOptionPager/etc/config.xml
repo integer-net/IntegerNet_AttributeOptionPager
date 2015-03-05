@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * integer_net Magento Module
+ *
+ * @category   IntegerNet
+ * @package    IntegerNet_AttributeOptionPager_Model_Observer
+ * @copyright  Copyright (c) 2015 integer_net GmbH (http://www.integer-net.de/)
+ * @author     Fabian Schmengler <fs@integer-net.de>
+ */
+-->
+<config>
+    <modules>
+        <IntegerNet_AttributeOptionPager>
+            <version>0.1.0</version>
+        </IntegerNet_AttributeOptionPager>
+    </modules>
+    <global>
+        <blocks>
+            <integernet_attributeoptionpager>
+                <class>IntegerNet_AttributeOptionPager_Block</class>
+            </integernet_attributeoptionpager>
+        </blocks>
+        <helpers>
+            <integernet_attributeoptionpager>
+                <class>IntegerNet_AttributeOptionPager_Helper</class>
+            </integernet_attributeoptionpager>
+        </helpers>
+        <models>
+            <integernet_attributeoptionpager>
+                <class>IntegerNet_AttributeOptionPager_Model</class>
+            </integernet_attributeoptionpager>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+            <controller_action_predispatch_adminhtml_catalog_product_attribute_edit>
+                <observers>
+                    <integernet_attributeoptionpager>
+                        <type>singleton</type>
+                        <class>integernet_attributeoptionpager/observer</class>
+                        <method>fetchPaginationParams</method>
+                    </integernet_attributeoptionpager>
+                </observers>
+            </controller_action_predispatch_adminhtml_catalog_product_attribute_edit>
+            <!-- Mage_Eav_Model_Resource_Entity_Attribute_Option_Collection does not define $_eventPrefix :-( -->
+            <core_collection_abstract_load_before>
+                <observers>
+                    <integernet_attributeoptionpager>
+                        <type>singleton</type>
+                        <class>integernet_attributeoptionpager/observer</class>
+                        <method>setPageOnCollection</method>
+                    </integernet_attributeoptionpager>
+                </observers>
+            </core_collection_abstract_load_before>
+            <core_collection_abstract_load_after>
+                <observers>
+                    <integernet_attributeoptionpager>
+                        <type>singleton</type>
+                        <class>integernet_attributeoptionpager/observer</class>
+                        <method>revertLoadedCollection</method>
+                    </integernet_attributeoptionpager>
+                </observers>
+            </core_collection_abstract_load_after>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <integernet_attributeoptionpager>
+                        <type>singleton</type>
+                        <class>integernet_attributeoptionpager/observer</class>
+                        <method>addPaginationToBlock</method>
+                    </integernet_attributeoptionpager>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+        <layout>
+            <updates>
+                <integernet_attributeoptionpager>
+                    <file>integernet_attributeoptionpager.xml</file>
+                </integernet_attributeoptionpager>
+            </updates>
+        </layout>
+    </adminhtml>
+    <stores>
+        <admin>
+            <catalog_attributes>
+                <pagination>
+                    <page_size>1000</page_size>
+                </pagination>
+            </catalog_attributes>
+        </admin>
+    </stores>
+    <phpunit>
+        <suite>
+            <modules>
+                <IntegerNet_AttributeOptionPager/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

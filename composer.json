@@ -1,0 +1,25 @@
+{
+    "name": "integer-net/IntegerNet_AttributeOptionPager",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "https://github.com/integer-net/IntegerNet_AttributeOptionPager",
+    "description": "Pagination for Attribute Option Form",
+    "keywords": ["magento", "adminhtml", "widget"],
+    "authors": [
+        {
+            "name": "integer_net GmbH",
+            "email": "info@integer-net.de",
+            "homepage": "http://www.integer-net.de/",
+            "role": "Company"
+        },
+        {
+            "name": "Fabian Schmengler",
+            "email": "fs@integer-net.de",
+            "homepage": "http://www.integer-net.de/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+}
