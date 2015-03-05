@@ -1,4 +1,4 @@
-IntegerNet_AttributeOptionPage
+IntegerNet_AttributeOptionPager
 =====================
 Adds pagination to the attribute option form, useful for product attributes with very big numbers of options.
 
@@ -7,9 +7,10 @@ Facts
 [![Build Status](https://travis-ci.org/integer-net/IntegerNet_AttributeOptionPager.svg?branch=master)](https://travis-ci.org/integer-net/IntegerNet_AttributeOptionPager)
 
 - version: 0.2.0
-- extension key: integer_net/IntegerNet_AttributeOptionPager
+- extension key: integer-net/attribute-option-pager
 - [extension on GitHub](https://github.com/integer-net/IntegerNet_AttributeOptionPager)
 - [direct download link](https://github.com/integer-net/IntegerNet_AttributeOptionPager/archive/master.zip)
+- No class rewrites
 
 Description
 -----------
