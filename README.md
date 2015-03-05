@@ -4,8 +4,9 @@ Adds pagination to the attribute option form, useful for product attributes with
 
 Facts
 -----
+[![Build Status](https://travis-ci.org/integer-net/IntegerNet_AttributeOptionPager.svg?branch=master)](https://travis-ci.org/integer-net/IntegerNet_AttributeOptionPager)
+
 - version: 0.2.0
-- [![Build Status](https://travis-ci.org/integer-net/IntegerNet_AttributeOptionPager.svg?branch=master)](https://travis-ci.org/integer-net/IntegerNet_AttributeOptionPager)
 - extension key: integer_net/IntegerNet_AttributeOptionPager
 - [extension on GitHub](https://github.com/integer-net/IntegerNet_AttributeOptionPager)
 - [direct download link](https://github.com/integer-net/IntegerNet_AttributeOptionPager/archive/master.zip)
@@ -43,7 +44,7 @@ Developer
 ---------
 Fabian Schmengler, [integer_net GmbH](http://www.integer-net.de)
 
-Twitter: [@fschmengler](https://twitter.com/fschmengler] [@integer_net](https://twitter.com/integer_net)
+Twitter: [@fschmengler](https://twitter.com/fschmengler) [@integer_net](https://twitter.com/integer_net)
 
 Licence
 -------
@@ -51,4 +52,4 @@ Licence
 
 Copyright
 ---------
-(c) 2015 integer_net GmbH
+© 2015 integer_net GmbH
