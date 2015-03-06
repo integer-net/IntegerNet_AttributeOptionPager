@@ -25,7 +25,8 @@ class IntegerNet_AttributeOptionPager_Helper_Data extends Mage_Core_Helper_Abstr
      * @return bool
      * @throws Zend_Db_Select_Exception
      */
-    public function isOptionCollectionStoreFiltered(Mage_Eav_Model_Resource_Entity_Attribute_Option_Collection $collection)
+    public function isOptionCollectionStoreFiltered(
+        Mage_Eav_Model_Resource_Entity_Attribute_Option_Collection $collection)
     {
         $joins = $collection->getSelect()->getPart(Zend_Db_Select::FROM);
         return array_key_exists('tsv', $joins) || array_key_exists('tdv', $joins);

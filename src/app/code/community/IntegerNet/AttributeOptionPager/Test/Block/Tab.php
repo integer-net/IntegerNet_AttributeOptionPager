@@ -61,7 +61,7 @@ class IntegerNet_AttributeOptionPager_Test_Block_Tab extends EcomDev_PHPUnit_Tes
             'visible_in_advanced_search' => false,
             'apply_to'                   => Mage_Catalog_Model_Product_Type::TYPE_SIMPLE,
             'option'                     => array(
-                'values' => range(101,199)
+                'values' => range(101, 199)
             ),
         ));
         $setup->endSetup();
@@ -104,7 +104,9 @@ class IntegerNet_AttributeOptionPager_Test_Block_Tab extends EcomDev_PHPUnit_Tes
         $this->_triggerPredispatchObserver($requestPage, $requestPageSize);
 
         $actualOptionValues = array_map(
-            function($value) { return $value['store0']; },
+            function ($value) {
+                return $value['store0'];
+            },
             $this->_block->getOptionValues());
         $expectedOptionValues = $this->expected('page-%s-size-%d', $requestPage, $requestPageSize ?: $configPageSize)
             ->getOptions();
