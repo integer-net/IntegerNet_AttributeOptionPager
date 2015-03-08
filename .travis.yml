@@ -20,7 +20,7 @@ before_script:
   # Installing module
   - bin/mage-ci install-module tests/magento $(pwd)
   # Installing EcomDev_PHPUnit module
-  - git clone https://github.com/EcomDev/EcomDev_PHPUnit.git -b dev ./phpunit/
+  - git clone https://github.com/EcomDev/EcomDev_PHPUnit.git -b master ./phpunit/
   - bin/mage-ci install-module tests/magento "$(pwd)/phpunit/"
   # Configuring EcomDev_PHPUnit module
   - CURRENT_DIR=$(pwd)
