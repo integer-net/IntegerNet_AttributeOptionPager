@@ -30,7 +30,7 @@ class IntegerNet_AttributeOptionPager_Test_Controller_Tab
 	public function paginationInLayout()
 	{
 	    $this->adminSession();
-	    $this->dispatch('adminhtml_catalog_product_attribute_edit',
+	    $this->dispatch('adminhtml/catalog_product_attribute/edit',
 	        array('attribute_id' => self::COLOR_ATTRIBUTE_ID, '_query' => array('active_tab' => 'labels')));
 	    $this->assertLayoutBlockRendered('integernet_attributeoptionpager.toolbar',
 	        'Pagination toolbar should be rendered.');
