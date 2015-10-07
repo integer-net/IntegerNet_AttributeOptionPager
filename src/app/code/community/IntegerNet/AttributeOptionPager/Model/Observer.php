@@ -27,7 +27,7 @@ class IntegerNet_AttributeOptionPager_Model_Observer
      */
     protected $_helper;
 
-    public function __construct()
+    protected function _init()
     {
         $this->_pager = Mage::getModel('integernet_attributeoptionpager/pager');
         $this->_toolbar = Mage::getModel('integernet_attributeoptionpager/toolbar');
@@ -43,6 +43,7 @@ class IntegerNet_AttributeOptionPager_Model_Observer
      */
     public function fetchPaginationParams(Varien_Event_Observer $observer)
     {
+        $this->_init();
         $this->_pager->setPageFromRequest($observer->getControllerAction()->getRequest());
         return $this;
     }
@@ -56,6 +57,9 @@ class IntegerNet_AttributeOptionPager_Model_Observer
      */
     public function setPageOnCollection(Varien_Event_Observer $observer)
     {
+        if (! $this->_pager) {
+            return $this;
+        }
         $collection = $observer->getCollection();
         if ($collection instanceof Mage_Eav_Model_Resource_Entity_Attribute_Option_Collection
             && !$this->_helper->isOptionCollectionStoreFiltered($collection)
@@ -77,6 +81,9 @@ class IntegerNet_AttributeOptionPager_Model_Observer
      */
     public function revertLoadedCollection(Varien_Event_Observer $observer)
     {
+        if (! $this->_pager) {
+            return $this;
+        }
         /** @var Mage_Core_Model_Resource_Db_Collection_Abstract $collection */
         $collection = $observer->getCollection();
         if ($collection->getFlag(IntegerNet_AttributeOptionPager_Model_Pager::FLAG_REVERT_COLLECTION)) {
@@ -100,6 +107,9 @@ class IntegerNet_AttributeOptionPager_Model_Observer
      */
     public function addPaginationToBlock(Varien_Event_Observer $observer)
     {
+        if (! $this->_pager) {
+            return $this;
+        }
         $block = $observer->getBlock();
         if ($block instanceof Mage_Adminhtml_Block_Catalog_Product_Attribute_Edit_Tab_Options) {
             $html = $observer->getTransport()->getHtml();
